@@ -248,13 +248,13 @@ let indented_title_label (name:string) (kw:regexp)
 Variable: record_re
   Default regexp for <title> keyword pattern
 *)
-let record_re          = ( /[^]\n\/]+/ - /#comment/ )
+let record_re          = ( /[^]=\n\/]+/ - /#comment/ )
 
 (*
 Variable: record_label_re
   Default regexp for <title_label> keyword pattern
 *)
-let record_label_re    = /[^]\n]+/
+let record_label_re    = /[^]=\n]+/
 
 
 (* Group: Record definition *)
